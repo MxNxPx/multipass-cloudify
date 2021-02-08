@@ -1,0 +1,22 @@
+###########
+## setup ##
+###########
+# stand up vm
+bash multipass-setup-cloudify.sh
+
+# verify vms are running and note the IPs
+multipass list
+
+# shell into multipass vm and start cloudify
+# open cloudify UI console in browser using:
+# http://<MULTIPASS-IP>:8888
+###########
+
+
+
+#############
+## cleanup ##
+#############
+# delete vm and purge data
+multipass delete ubuntu-multipass-cloudify && multipass purge
+#############
