@@ -1,6 +1,7 @@
 ## https://docs.cloudify.co/latest/trial_getting_started/set_trial_manager/other-deployments/
 # curl -O https://repository.cloudifysource.org/cloudify/5.1.2/community/cloudify-manager-aio-docker-5.1.2-ga.tar
 # sudo docker load -i cloudify-manager-aio-docker-5.1.2-ga.tar
+## https://docs.cloudify.co/latest/trial_getting_started/set_trial_manager/download_community/
 # sudo docker run --name cfy_manager_local -d --restart unless-stopped -v /sys/fs/cgroup:/sys/fs/cgroup:ro --tmpfs /run --tmpfs /run/lock --security-opt seccomp:unconfined --cap-add SYS_ADMIN -p 8888:80 -p 5671:5671 -p 53333:53333 -p 8000:8000 cloudify-manager-aio:latest
 # sudo dpkg -i cloudify-cli_5.1.2-ga_amd64.deb
 
